@@ -1,14 +1,14 @@
 {
-  "name": "@cprecioso/pkg-name",
+  "name": "@cprecioso/react-hooks",
   "version": "0.1.0",
-  "description": "@cprecioso/pkg-name description",
+  "description": "Utility hooks for React",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cprecioso/pkg-name.git"
+    "url": "git+https://github.com/cprecioso/react-hooks.git"
   },
-  "homepage": "https://github.com/cprecioso/pkg-name#readme",
+  "homepage": "https://github.com/cprecioso/react-hooks#readme",
   "bugs": {
-    "url": "https://github.com/cprecioso/pkg-name/issues"
+    "url": "https://github.com/cprecioso/react-hooks/issues"
   },
   "author": "Carlos Precioso",
   "license": "MIT",
@@ -22,8 +22,12 @@
     "build": "tsup",
     "prepack": "$npm_execpath run build"
   },
+  "peerDependencies": {
+    "react": ">=17"
+  },
   "devDependencies": {
     "@cprecioso/tsconfig": "^2.0.0",
+    "@types/react": "^18.0.37",
     "prettier": "^2.8.7",
     "prettier-plugin-organize-imports": "^3.2.2",
     "prettier-plugin-pkg": "^0.17.1",
